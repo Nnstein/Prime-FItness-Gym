@@ -14,11 +14,8 @@ RUN npm ci --legacy-peer-deps
 COPY . .
 
 # Build the application (Static Export)
-# This will create an 'out' directory
+# This will create a 'dist' directory (configured in next.config.ts)
 RUN npm run build
-
-# Create symlink for Coolify compatibility (Coolify expects 'dist')
-RUN ln -s /app/out /app/dist
 
 # Stage 2: Runner
 FROM nginx:alpine AS runner
@@ -30,8 +27,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy static assets from builder stage
-# Next.js 'output: export' creates an 'out' directory by default
-COPY --from=builder /app/out /usr/share/nginx/html
+# Next.js outputs to 'dist' directory (configured in next.config.ts)
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
