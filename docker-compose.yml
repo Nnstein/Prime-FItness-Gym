@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: prime-fitness-web
+    restart: always
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
