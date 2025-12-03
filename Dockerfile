@@ -17,6 +17,9 @@ COPY . .
 # This will create an 'out' directory
 RUN npm run build
 
+# Create symlink for Coolify compatibility (Coolify expects 'dist')
+RUN ln -s /app/out /app/dist
+
 # Stage 2: Runner
 FROM nginx:alpine AS runner
 
