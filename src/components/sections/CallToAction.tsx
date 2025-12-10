@@ -14,7 +14,7 @@ export function CallToAction() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-black text-black uppercase mb-6 tracking-tighter"
+                    className="text-3xl sm:text-4xl md:text-6xl font-black text-black uppercase mb-6 tracking-tighter"
                 >
                     Connect Engage Transform
                 </motion.h2>
@@ -23,7 +23,7 @@ export function CallToAction() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="text-xl text-black/80 font-medium mb-10 max-w-2xl mx-auto"
+                    className="text-base sm:text-lg md:text-xl text-black/80 font-medium mb-10 max-w-2xl mx-auto"
                 >
                     Don't wait for tomorrow. Start your transformation journey today with Prime Fitness.
                 </motion.p>

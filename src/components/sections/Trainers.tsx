@@ -42,14 +42,14 @@ export function Trainers() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold text-white mb-6"
+                        className="text-3xl md:text-5xl font-bold text-white mb-6"
                     >
                         Your Fitness Goals, <br />
                         <span className="text-primary">Their Expertise</span>
                     </motion.h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {trainers.map((trainer, index) => (
                         <motion.div
                             key={index}
@@ -59,12 +59,12 @@ export function Trainers() {
                             viewport={{ once: true }}
                         >
                             <Card className="bg-transparent border-none overflow-hidden group">
-                                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-6">
+                                <div className="relative aspect-3/4 overflow-hidden rounded-2xl mb-6">
                                     <div
                                         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
                                         style={{ backgroundImage: `url('${trainer.image}')` }}
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
                                         <div className="flex gap-4">
                                             <Link href="#" className="bg-white/10 backdrop-blur-md p-2 rounded-full hover:bg-primary hover:text-black transition-colors text-white">
                                                 <Instagram className="h-5 w-5" />

@@ -49,7 +49,7 @@ export function Features() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                             viewport={{ once: true }}
-                            className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+                            className="text-3xl md:text-5xl font-bold text-foreground mb-6"
                         >
                             Inspired to <br />
                             <span className="text-primary">Inspire Your Best Self</span>
@@ -97,10 +97,10 @@ export function Features() {
                         <div className="relative z-10 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl shadow-primary/20">
                             {/* Placeholder for a gym interior or trainer image */}
                             <div
-                                className="aspect-square md:aspect-[4/5] bg-cover bg-center"
+                                className="aspect-square md:aspect-4/5 bg-cover bg-center"
                                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1375&auto=format&fit=crop')" }}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent" />
                             <div className="absolute bottom-8 left-8 right-8">
                                 <div className="bg-black/60 backdrop-blur-md p-6 rounded-2xl border border-white/10">
                                     <p className="text-white font-medium italic">"The only bad workout is the one that didn't happen."</p>

@@ -47,14 +47,14 @@ export function Classes() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold text-white mb-6"
+                        className="text-3xl md:text-5xl font-bold text-white mb-6"
                     >
                         Train Smarter, <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">Unleash Your Potential</span>
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/60">Unleash Your Potential</span>
                     </motion.h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {classes.map((item, index) => (
                         <motion.div
                             key={index}

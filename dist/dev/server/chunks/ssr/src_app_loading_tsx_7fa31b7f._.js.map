@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Nnstein%27s%20PC/Desktop/Google%20AntiGravity%20Projects/Prime%20FItness%20Gym/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\r\n    return (\r\n        <div className=\"flex h-[50vh] w-full items-center justify-center\">\r\n            <div className=\"h-16 w-16 animate-spin rounded-full border-4 border-zinc-800 border-t-primary\"></div>\r\n        </div>\r\n    );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC;YAAI,WAAU;;;;;;;;;;;AAG3B"}}]
+}

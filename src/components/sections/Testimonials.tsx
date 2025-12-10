@@ -37,14 +37,14 @@ export function Testimonials() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold text-white mb-6"
+                        className="text-3xl md:text-5xl font-bold text-white mb-6"
                     >
                         Your Success, <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">Our Inspiration</span>
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/60">Our Inspiration</span>
                     </motion.h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {testimonials.map((item, index) => (
                         <motion.div
                             key={index}

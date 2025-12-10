@@ -19,6 +19,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Prime Fitness Gym",
   description: "Sculpt Your Body, Elevate Your Spirit. Join the elite fitness community.",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' }
+    ],
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
