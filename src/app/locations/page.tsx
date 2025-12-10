@@ -28,7 +28,7 @@ const locations = [
 export default function LocationsPage() {
     return (
         <div className="min-h-screen bg-background pt-24">
-            <section className="py-20 bg-gradient-to-b from-black to-background">
+            <section className="py-20 bg-linear-to-b from-black to-background">
                 <div className="container mx-auto px-4 text-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
